@@ -1,0 +1,28 @@
+﻿@model AdminMoviesViewModel
+
+
+<h1>Only Titles</h1>
+
+<table class="table table-striped table-hover table-bordered" >
+    <thead>
+        <tr>
+            <th style="width:100px" class="text-center">Tüm film başlıkları</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var movie in Model.Movies)
+        {
+
+            <tr>
+                
+                
+                <td class="text-center">@movie.Title</td>
+                
+                
+
+            </tr>
+
+        }
+    </tbody>
+</table>
